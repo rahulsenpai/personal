@@ -1,0 +1,352 @@
+*{font-family: sans-serif;}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* background svg css */
+.container {
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background: #232627;
+  }
+  
+.container svg {
+    
+    position: absolute;
+    height: 100%;
+  }
+  
+  .lines {
+    opacity: 0.05;
+  }
+  
+  .line {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #4C3A90;
+  }
+  
+  .lights {
+    opacity: 0.9;
+  }
+  
+  .light {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #7A6BB5;
+  }
+
+
+/* navbar css */
+  .navbar {
+    padding: 10px 20px;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 30px;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+.nav-item {
+    font-size: 1.2rem;
+    font-size: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #7A6BB5; /* Change color on hover */
+}
+
+
+/* home page css */
+.hpcontent{
+    text-align: justify;
+    text-justify: inter-word;
+    max-width: 95%;
+    margin: auto;
+    margin-top: 8rem;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icons{
+    font-size: 2.3rem;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;  
+}
+
+.about{
+    color: ghostwhite;
+    font-size: 1.4rem;
+    height: 25rem;
+    width: 40rem;  
+}
+
+p{
+    color: rgb(181, 175, 175);
+}
+
+.img-container{
+    height: 25rem;
+    width: 25rem;
+}
+
+.img-container img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+
+/* skill section css */
+  .skill-heading h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 14rem;
+  }
+
+  .lang-heading{
+    font-size: 1.5rem;
+    width: 80%;
+    margin: auto;
+  }
+  .skill-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .skill-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 5rem;
+  }
+  .skill-icons p{
+    font-size: small;
+  }
+
+  .skill-logo i{
+    font-size: 4.5rem;
+    color: ghostwhite;
+  }
+  .skill-icons img{
+    max-width: 85%
+  }
+
+
+  /* project section css */
+  .project-heading h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 14rem;
+  }
+
+  .project-heading{
+    font-size: 1.5rem;
+    width: 80%;
+    margin: auto;
+  }
+   
+  .project-data{
+    width: 95%;
+    margin: 4rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3rem;
+  }
+  .card {
+    margin-top: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+    max-width: 100%;
+    height: 250px;
+    background: linear-gradient(135deg, #464648 0%, #222326 100%);
+    border-radius: 20px;
+    transition: 0.7s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+    height: 330px;
+    width: 350px;
+}
+
+.card .img{
+    position: absolute;
+    top: 30px;
+    width: 270px;
+    height: 145px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .img {
+    top: -70px;
+    scale: 0.80;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+    height: 210px;
+    width: 370px;
+}
+
+.card .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .textWrapper {
+    position: absolute;
+    top: 190px;
+    width: 80%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .textWrapper {
+    top: 130px;
+    height: 250px;
+}
+
+.card .textWrapper h2{
+    font-size: 1rem;
+    font-weight: 700;
+    color: ghostwhite;
+}
+
+.card .textWrapper p {
+    color: seashell;
+}
+
+/* project section css */
+.contact-container{
+  height: 17rem;
+  background-image: linear-gradient(rgba(35, 38, 39, 0.8), rgb(51, 53, 54));
+
+}
+
+.contact-heading h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 14rem;
+  }
+
+.contact-data-container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-data{
+  color: #fff;
+  font-size: larger;
+}
+
+.contact-icons{
+    font-size: 2.3rem;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.contact-data-reserve{
+  color: #fff;
+  font-size: larger;
+  font-style: bold;
+  margin-top: 1.5rem;
+}
+
+
+  @media only screen and (max-width: 720px) {
+    .icons
+    {
+       flex-direction: row;
+       justify-content: end;
+       width: 90%;
+       height: 2rem;
+       font-size: 1.8rem;
+    }
+    .hpcontent{
+      margin-top: auto;
+      gap: 4rem;
+    }
+
+    .img-container{
+      height: 20rem;
+      width: 20rem;
+    }
+
+    .about{
+      width: 90%;
+      font-size: 1.3rem;
+    }
+
+    .project-data{
+      
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+   }
+
+    .contact-data{
+      font-size: medium;
+    }
+    
+    .skill-heading h1{
+      margin-top: 7rem;
+    }
+    
+    .project-heading h1{
+      margin-top: 7rem;
+    }
+
+    .contact-heading h1{
+      margin-top: 7rem;
+    }
+  }
